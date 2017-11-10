@@ -1,4 +1,4 @@
-routes=[
+Router._routes=[
   {
     path:'/'
     name:'home'
@@ -7,7 +7,7 @@ routes=[
   }
 ]
 Router.map ->
-  routes.forEach (r)=>
+  Router._routes.forEach (r)=>
     @route r.path,
       name:r.name
       template:r.template

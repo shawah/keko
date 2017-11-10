@@ -14,4 +14,6 @@ iron:router
 aldeed:schema-index
 aldeed:collection2-core
 twbs:bootstrap
+accounts-password
 ian:accounts-ui-bootstrap-3
+alanning:roles

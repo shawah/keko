@@ -1,0 +1,16 @@
+template(name='nav')
+  nav(role="navigation").navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a(href="#").navbar-brand KEKO
+      .collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav
+          each menuItems
+            li(class=isActive): a(href="#{path}") #{title}
+        ul.nav.navbar-nav.navbar-right
+          +loginButtons
