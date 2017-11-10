@@ -10,3 +10,8 @@ ecmascript
 coffeescript
 mquandalle:jade
 less
+iron:router
+aldeed:schema-index
+aldeed:collection2-core
+twbs:bootstrap
+ian:accounts-ui-bootstrap-3
