@@ -1,11 +1,18 @@
 template(name='description')
-  h1 Welcome to my booking system!
-  h2 git gud
-  if userLoggedIn
-    h3 #{topkek}
-  else
-    h3 T'es pas co
-  hr
-  h1 List de nombres: #{listOfNumbers}
-  each listOfNumbers
-    p Le numero est #{this}
+	.container-fluid
+		h1 Welcome to my booking system!
+		if userLoggedIn
+			h3 Log pls
+		else
+			.form-group
+				.row
+					.col-xs-6
+						.input-group
+							span.input-group-addon @
+							input.form-control(type='text' placeholder='username')#username
+					.col-xs-6
+						.input-group
+							span.input-group-addon @
+							input.form-control(type='password' placeholder='****')#password
+			.form-group
+				button.btn.btn-block#check click
