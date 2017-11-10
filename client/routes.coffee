@@ -1,3 +1,5 @@
+Router.configure
+  loadingTemplate: 'spinner'
 Router._routes=[
   {
     path:'/'
