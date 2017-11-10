@@ -1,3 +1,11 @@
 template(name='description')
   h1 Welcome to my booking system!
   h2 git gud
+  if userLoggedIn
+    h3 #{topkek}
+  else
+    h3 T'es pas co
+  hr
+  h1 List de nombres: #{listOfNumbers}
+  each listOfNumbers
+    p Le numero est #{this}
