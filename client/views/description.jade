@@ -2,8 +2,9 @@ template(name='description')
 	.container-fluid
 		h1 Welcome to my booking system!
 		if userLoggedIn
-			h3 Log pls
+			+calendar
 		else
+			h3 Please log in to see the calendar
 			.form-group
 				.row
 					.col-xs-6

@@ -7,10 +7,6 @@ Template.description.onRendered ->
 Template.description.onDestroyed ->
   console.log 'destoyed'
 Template.description.events
-  'click h2':->
-    console.log 'click on h2'
-  'mouseover h1':->
-    console.log 'mouse over h1'
   'click #check':->
     console.log $("#username").val()
     console.log $("#password").val()
