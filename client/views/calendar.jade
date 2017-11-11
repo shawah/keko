@@ -1,23 +1,13 @@
 template(name='calendar')
 	.form-group
 		.row
-			.col-xs-2
-				h3 Mon
-					table(border='1', width='20%')
-						tr 1
-						tr 2
-						tr 3
-			.col-xs-2
-				h3 Tue
-			.col-xs-2
-				h3 Wed
-			.col-xs-2
-				h3 Thu
-			.col-xs-2
-				h3 Fri
-			.col-xs-2
-				h3 Sat
-			.col-xs-2
-				h3 Sun
+			.col-xs-6
+				.input-group
+					span.input-group-addon#addevent +  
+					input.form-control(type='text' placeholder='add a new event')#addeventtext
+		.row
+			each days
+				div(class='col-xs-{{size}}')
+					h3 #{label}
 
 
