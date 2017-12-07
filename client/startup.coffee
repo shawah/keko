@@ -25,9 +25,6 @@ Meteor.startup ->
       path.join ' > '
     relevantEventKeys: [
       'ctrlKey'
-      # 'shiftKey'
-      # 'altKey'
-      # 'metaKey'
     ]
     globalDataContext: true
     globalDataContextVar: '$$$'

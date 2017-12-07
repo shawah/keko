@@ -10,18 +10,7 @@ Router._routes=[
     waitOn: null
     layoutTemplate: 'home'
     onAfterAction:->
-      window.document.title = "KEKO "
-  }
-  {
-    path: '/game'
-    name: 'game'
-    template: 'game'
-    title: 'Game'
-    data: null
-    waitOn: null
-    layoutTemplate: 'home'
-    onAfterAction:->
-      window.document.title = "KEKO GAME"
+      window.document.title = "KEKO"
   }
 ]
 Router.map ->
