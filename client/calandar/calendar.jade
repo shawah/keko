@@ -1,15 +1,10 @@
 template(name='calendar')
-  .form-group
-    .row
-      .col-xs-6
-        .form-group.input-group
-          span.input-group-addon#addevent +
-          input.form-control(type='text' placeholder='add a new event')#addeventtext
-    .row
-      each days
-        div(class='col-xs-{{size}}')
-          .panel.panel-default
-            .panel-heading #{label}
-            .panel-body
+  .panel.panel-default
+    .panel-heading Calandar
+    .panel-body
+      .form-group
+        .row
+          each days
+            +calday
 
 

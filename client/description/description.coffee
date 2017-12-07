@@ -7,13 +7,6 @@ Template.description.onRendered ->
 Template.description.onDestroyed ->
   console.log 'destoyed'
 Template.description.events
-  'click #check':->
-    console.log $("#username").val()
-    console.log $("#password").val()
 Template.description.helpers
-  topkek:->
-    return "SALUT CA VA ?"
   userLoggedIn:->
     Meteor.userId()?
-  listOfNumbers:->
-    [1..10]

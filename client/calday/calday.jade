@@ -1,0 +1,13 @@
+template(name='calday')
+  .col-xs-4
+    .panel.panel-default
+      .panel-heading
+        | #{label}
+        .pull-right
+          i.fa.fa-plus-circle(role='add')
+      .panel-body.min-panel-body
+        each events
+          .well.well-sm
+            | #{label} - #{fromH} -> #{toH}
+            .pull-right
+              i.fa.fa-minus-circle(role='remove')

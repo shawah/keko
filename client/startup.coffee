@@ -1,4 +1,7 @@
+import 'sweetalert2/dist/sweetalert2.min.css'
+import regeneratorRuntime from 'babel-runtime/regenerator'
 Meteor.startup ->
+  window.regeneratorRuntime = regeneratorRuntime
   Accounts.ui.config
     passwordSignupFields: 'USERNAME_ONLY'
   DebugClick =

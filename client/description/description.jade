@@ -1,19 +1,7 @@
 template(name='description')
 	.container-fluid
-		h1 Welcome to my booking system!
 		if userLoggedIn
 			+calendar
 		else
-			h3 Please log in to see the calendar
-			.form-group
-				.row
-					.col-xs-6
-						.input-group
-							span.input-group-addon @
-							input.form-control(type='text' placeholder='username')#username
-					.col-xs-6
-						.input-group
-							span.input-group-addon @
-							input.form-control(type='password' placeholder='****')#password
-			.form-group
-				button.btn.btn-block#check click
+			h1 Welcome to my booking system!
+			h3 Please login to see the calendar
